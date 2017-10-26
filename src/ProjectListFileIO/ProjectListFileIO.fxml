@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectListFileIO.ProjectListFileIOController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="500.0">
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="newbt" mnemonicParsing="false" text="New" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="1.0" />
+                  <Button fx:id="loadbt" layoutX="60.0" layoutY="1.0" mnemonicParsing="false" text="Load" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="1.0" />
+                  <Button fx:id="savebt" layoutX="117.0" layoutY="1.0" mnemonicParsing="false" text="Save" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="1.0" />
+                  <TextField fx:id="tf" layoutX="173.0" layoutY="1.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="1.0" />
+                  <Label fx:id="lb" layoutX="327.0" layoutY="5.0" text="파일존재유무" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextArea fx:id="ta" layoutX="1.0" layoutY="3.0" prefHeight="475.0" prefWidth="300.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+               </children>
+            </AnchorPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>
